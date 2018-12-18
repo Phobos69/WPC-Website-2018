@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Emmanuel Samuel">
+    <title>Western Power - {{ page_name }}</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".hamburger-btn .fa-times").hide();
+        
+            $(".hamburger-btn .fa-bars").click(function(){
+              $(this).hide();
+              $(".hamburger-btn .fa-times").show();
+              $(".mob ul").addClass("current");
+            });
+        
+            $(".hamburger-btn .fa-times").click(function(){
+                $(this).hide();
+                $(".hamburger-btn .fa-bars").show();
+                $(".mob ul").removeClass("current");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container">
+            <div id="branding">  
+                <a class="brand" href="#"><img src="images/logo.png" alt="Logo"></a> 
+            </div>    
+            <nav class="desk">
+                <ul>
+                    <li class= "{% if page_ref=='index' %}current{% endif %}"><a href="index.html">Home</a></li>
+                    <li class= "{% if page_ref=='about' %}current{% endif %}"><a href="about.html">About</a></li>
+                    <li class= "{% if page_ref=='project' %}current{% endif %}"><a href="project.html">Project<span class="arrow-down"></span></a>
+                        <ul class="dropdown">
+                            <li class= "{% if page_ref=='projectoverview' %}current{% endif %}"><a href="projectoverview.html">Project Overview</a></li>
+                            <li class= "{% if page_ref=='location' %}current{% endif %}"><a href="location.html">Location</a></li>
+                            <li class= "{% if page_ref=='zambiaelectricity' %}current{% endif %}"><a href="zambiaelectricity.html">Zambia Electricity</a></li>
+                            <li class= "{% if page_ref=='eandsframework' %}current{% endif %}"><a href="eandsframework.html">E&S Framework</a></li>
+                            <li class= "{% if page_ref=='projectfinance' %}current{% endif %}"><a href="projectfinance.html">Project Finance</a></li>
+                        </ul>
+                    </li>
+                    <li class= "{% if page_ref=='procurement' %}current{% endif %}"><a href="procurement.html">Procurement</a></li>
+                    <li class= "{% if page_ref=='documents' %}current{% endif %}"><a href="documents.html">Documents</a></li>
+                    <li class= "{% if page_ref=='contactus' %}current{% endif %}"><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mob">
+                <div class="hamburger-btn">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="active">
+                    <li class= "{% if page_ref=='index' %}current{% endif %}"><a href="index.html">Home</a></li>
+                    <li class= "{% if page_ref=='about' %}current{% endif %}"><a href="about.html">About</a></li>
+                    <li class= "{% if page_ref=='project' %}current{% endif %}"><a href="project.html">Project<span class="arrow-down"></span></a>
+                        <ul class="dropdown">
+                            <li class= "{% if page_ref=='projectoverview' %}current{% endif %}"><a href="projectoverview.html">Project Overview</a></li>
+                            <li class= "{% if page_ref=='location' %}current{% endif %}"><a href="location.html">Location</a></li>
+                            <li class= "{% if page_ref=='zambiaelectricity' %}current{% endif %}"><a href="zambiaelectricity.html">Zambia Electricity</a></li>
+                            <li class= "{% if page_ref=='eandsframework' %}current{% endif %}"><a href="eandsframework.html">E&S Framework</a></li>
+                            <li class= "{% if page_ref=='projectfinance' %}current{% endif %}"><a href="projectfinance.html">Project Finance</a></li>
+                        </ul>
+                    </li>
+                    <li class= "{% if page_ref=='procurement' %}current{% endif %}"><a href="procurement.html">Procurement</a></li>
+                    <li class= "{% if page_ref=='documents' %}current{% endif %}"><a href="documents.html">Documents</a></li>
+                    <li class= "{% if page_ref=='contactus' %}current{% endif %}"><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    {% block content %} {% endblock %}
+
+    <footer id="main-footer">
+        <p>copyright &copy 2018</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Emmanuel Samuel">
+    <title>Western Power - Project Overview</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".hamburger-btn .fa-times").hide();
+        
+            $(".hamburger-btn .fa-bars").click(function(){
+              $(this).hide();
+              $(".hamburger-btn .fa-times").show();
+              $(".mob ul").addClass("current");
+            });
+        
+            $(".hamburger-btn .fa-times").click(function(){
+                $(this).hide();
+                $(".hamburger-btn .fa-bars").show();
+                $(".mob ul").removeClass("current");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container">
+            <div id="branding">  
+                <a class="brand" href="#"><img src="images/logo.png" alt="Logo"></a> 
+            </div>    
+            <nav class="desk">
+                <ul>
+                    <li class= ""><a href="index.html">Home</a></li>
+                    <li class= ""><a href="about.html">About</a></li>
+                    <li class= ""><a href="project.html">Project<span class="arrow-down"></span></a>
+                        <ul class="dropdown">
+                            <li class= "current"><a href="projectoverview.html">Project Overview</a></li>
+                            <li class= ""><a href="location.html">Location</a></li>
+                            <li class= ""><a href="zambiaelectricity.html">Zambia Electricity</a></li>
+                            <li class= ""><a href="eandsframework.html">E&S Framework</a></li>
+                            <li class= ""><a href="projectfinance.html">Project Finance</a></li>
+                        </ul>
+                    </li>
+                    <li class= ""><a href="procurement.html">Procurement</a></li>
+                    <li class= ""><a href="documents.html">Documents</a></li>
+                    <li class= ""><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mob">
+                <div class="hamburger-btn">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="active">
+                    <li class= ""><a href="index.html">Home</a></li>
+                    <li class= ""><a href="about.html">About</a></li>
+                    <li class= ""><a href="project.html">Project<span class="arrow-down"></span></a>
+                        <ul class="dropdown">
+                            <li class= "current"><a href="projectoverview.html">Project Overview</a></li>
+                            <li class= ""><a href="location.html">Location</a></li>
+                            <li class= ""><a href="zambiaelectricity.html">Zambia Electricity</a></li>
+                            <li class= ""><a href="eandsframework.html">E&S Framework</a></li>
+                            <li class= ""><a href="projectfinance.html">Project Finance</a></li>
+                        </ul>
+                    </li>
+                    <li class= ""><a href="procurement.html">Procurement</a></li>
+                    <li class= ""><a href="documents.html">Documents</a></li>
+                    <li class= ""><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    
+
+    <div id="container">
+        <section id="header">
+                <h1>Project Overview</h1>
+        </section>
+
+        <section class="header2">
+                <h2>Project Outline</h2>
+        </section> 
+
+        <section id="projects">    
+            <p>Feasibility Study draft delivered in May 2018:</p>
+            <ul>
+                <li>Low head, high flow, run-of-river hydroelectric power generation.</li>
+                <li>180 MW installed capacity generating 855 GWh p.a. net for a 52% plant factor.</li>
+                <li>Adjustable weirs and embankments 3m high for head-pond control at 990 masl and to pass required environmental and social flow requirements - EFlows.</li>
+                <li>Barrage across the left (east) river channel with radial gates for sediment scouring, intake control and flood passing.</li>
+                <li>Trapezoidal canal 3 km in length from intakes to forebay.</li>
+                <li>Large forebay for load rejection and for control of turbines.</li>
+                <li>Pit powerhouse with 4 bulb turbines generating > 45 MW of output each.</li>
+                <li>EPC construction cost estimate of US$300m –US$350m over a 36-month construction period.</li>
+            </ul>
+        </section>
+        <section class="header2">
+                <h2>Project Phases</h2>
+        </section> 
+
+        <section id="picture3" ></section>
+    </div>
+
+
+    <footer id="main-footer">
+        <p>copyright &copy 2018</p>
+    </footer>
+</body>
+</html>
