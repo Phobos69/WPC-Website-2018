@@ -2,11 +2,14 @@
     user-select:none;
 }
 body{
-    font: 16px/1.6em yu Gothic Light;
+    font: 15px/1.6em "Poppins",sans-serif;
     font-weight:400;
     letter-spacing:.15em;
     background-color:#f4f4f4;
     color:#555;
+    display:table;
+    width:100%;
+    height:100%;
     padding:0;
     margin:0;
 }
@@ -16,6 +19,10 @@ body{
     width:80%;
     margin:auto;
     overflow:hidden;
+}
+
+html{
+    height:100%;
 }
 
 ul{
@@ -162,9 +169,9 @@ nav.mob, .hamburger-btn{
     margin-top:100px;
     margin-left:15.5%;
     text-align:center;
-    font-size: 30px;
+    font-size: 28.2px;
     line-height:1.5em;
-    letter-spacing:0.1em;
+    letter-spacing:0.01em;
     text-transform:none;
 }
 
@@ -172,21 +179,23 @@ nav.mob, .hamburger-btn{
     max-width:100%;
     font-weight:100;
     text-align:left;
-    font-size:20px;
+    font-size:15px;
     letter-spacing:0.1em;
+    overflow:auto;
 }
 
 #main1{
     max-width:100%;
     font-weight:100;
     text-align:center;
-    font-size:20px;
+    font-size:15px;
     letter-spacing:0.1em;
+    overflow:auto;
 }
 
 #header{
     font-style:normal;
-    font-size:40px;
+    font-size:20px;
     font-weight: lighter;
     text-align: center;
     margin-top:200px;
@@ -198,7 +207,7 @@ nav.mob, .hamburger-btn{
 
 .header3{
     margin:2% 10%;
-    font-size:20px;
+    font-size:15px;
 }
 
 #picture{
@@ -311,7 +320,7 @@ nav.mob, .hamburger-btn{
 }
 
 #picture13{
-    background-image: url('../images/ICA2.png');
+    background-image: url('../images/ICA3.png');
     background-position: left;
     background-repeat: no-repeat;
     margin:8px 10%;
@@ -338,7 +347,7 @@ nav.mob, .hamburger-btn{
 }
 
 #picture16{
-    background-image: url('../images/DHEC.png');
+    background-image: url('../images/DHEC2.png');
     background-position: left;
     background-repeat: no-repeat;
     margin:8px 10%;
@@ -394,7 +403,7 @@ nav.mob, .hamburger-btn{
 #projects{
     width:70%;
     font-weight:100;
-    font-size:20px;
+    font-size:15px;
     text-align:left;
     margin-right:0;
     margin-left:20%;
@@ -417,7 +426,7 @@ body .contact ul{
 }
 
 .contact{
-    padding-bottom:6.07%;
+    padding-bottom:10%;
 }
 
 #main-footer{
@@ -426,9 +435,14 @@ body .contact ul{
     color:#fff;
     text-align:center;
     padding:20px 0;
-    margin-top:100px;
+    height:auto;
     width:100%;
+    display:table;
+    margin-top:100px;
+    position:reletive;
+    clear:both;
 }
+
 
 @media screen and (max-width:900px){
     nav.desk{
@@ -503,7 +517,7 @@ body .contact ul{
 
     #title{
         width:70%;
-        margin-top:100px;
+        margin-top:50px;
         margin-left:15.5%;
         text-align:center;
         font-size: 20px;
@@ -514,7 +528,7 @@ body .contact ul{
 
     #header{
         font-style:normal;
-        font-size:30px;
+        font-size:20px;
         font-weight: lighter;
         text-align: center;
         margin-top:200px;
@@ -530,6 +544,69 @@ body .contact ul{
         background-position:center;
         width:100%;
         height:100%;
+    }
+
+    #picture{
+        background-image: url('../images/ngonye2.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin:50px 0;
+        min-height:150px;
+        height:250px;
+    }
+
+    #picture2{
+        background-image: url('../images/Hydrology2.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin:100px 0;
+        min-height:250px;
+        height:200px;
+    }
+
+    #picture3{
+        background-image: url('../images/Project merg2.png');
+        background-position:center;
+        background-repeat: no-repeat;
+        margin:0;
+        min-height:250px;
+        height:700px;
+    }
+
+    #picture4{
+        background-image: url('../images/Location2.png');
+        background-position:center;
+        background-repeat: no-repeat;
+        margin:100px 0;
+        min-height:250px;
+        height:550px;
+    }
+
+    #picture5{
+        background-image: url('../images/Local In1.1.png');
+        background-position:center;
+        background-repeat: no-repeat;
+        margin:100px 0;
+        min-height:250px;
+        height:350px;  
+    }
+
+    #picture6{
+        background-image: url('../images/Project lay1.1.png');
+        background-position:center;
+        background-repeat: no-repeat;
+        margin:100px 0;
+        min-height:250px;
+        height:350px;
+    }
+
+    #picture7{
+        background-image: url('../images/Zambia El.PNG');
+        background-position:center;
+        background-repeat: no-repeat;
+        margin:10px 0;
+        min-height:550px;
+        height:350px;
     }
 
     #picture10{
