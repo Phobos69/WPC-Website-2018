@@ -1,0 +1,347 @@
+@import 'images';
+
+*{
+    user-select:none;
+}
+body{
+    font: 15px/1.6em "Poppins",sans-serif;
+    font-weight:400;
+    letter-spacing:.15em;
+    background-color:#f4f4f4;
+    color:#555;
+    display:table;
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+/* Globol */
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+html{
+    height:100%;
+}
+
+ul{
+    padding:0;
+    margin:0;
+}
+
+/* Header */
+#main-header{
+    background-color:#fff;
+    margin: 0;
+    padding-top:20px;
+    padding-right: 15px;
+    padding-bottom:10px;
+    min-height:70px;
+    border-bottom: 0.25px solid lightgray;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+.logo img {
+    margin:0;
+}
+
+.container nav.mob{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:0;
+}
+
+header nav.desk li{
+    float:left;
+    display:inline;
+    padding:0 20px 0 20px;
+    position: relative;
+}
+
+header nav.desk li:hover ul.dropdown {display:block;}
+
+header nav.desk ul.dropdown li{
+    color: #333;
+}
+
+header nav.desk li ul.dropdown{
+    position: fixed;
+    display:none;
+    width: 300px;
+    background-color:#fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+    padding-top:0;
+}
+
+header nav.desk li ul.dropdown li a{
+    display:block;
+    list-style:none; 
+}
+
+header nav.desk li ul.dropdown li{
+    padding:15px 10px;
+    font-size:15px;
+}
+
+header nav.desk li:hover .arrow-down{border-top:5px solid  rgb(73, 186, 231);}
+
+.arrow-down{
+    width:0;
+    height:0;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #333;
+    position:relative;
+    top:10px;
+    right:-5px;
+    content:'';
+}
+
+header nav.desk a{
+    font-size:13px;
+    color:#333;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding-right:15px;
+    margin:0;
+}
+
+header #branding{
+    float: left;
+}
+
+header nav.desk{
+    float: right;
+    margin-top:10px;
+}
+
+header nav.desk .current a,
+nav.mob ul li .current{
+    color:#e8491d;
+    font-weight:bold;
+}
+
+header nav.desk a:hover,
+nav.mob ul li:hover{
+    Color: rgb(73, 186, 231);
+    font-weight:bold;
+}
+
+header nav.mob{
+    width:100%;
+    background: #fff;
+    height:60px;
+    position:reletive;
+    top:0;
+    left:0;
+}
+
+header nav.mob a{
+    color:#333;
+    text-decoration:none;
+
+}
+
+nav.mob, .hamburger-btn{
+    display:none;
+}
+
+#title{
+    width:70%;
+    margin-top:100px;
+    margin-left:15.5%;
+    text-align:center;
+    font-size: 28.2px;
+    line-height:1.5em;
+    letter-spacing:0.01em;
+    text-transform:none;
+}
+
+#main{
+    max-width:100%;
+    font-weight:100;
+    text-align:left;
+    font-size:15px;
+    letter-spacing:0.1em;
+    overflow:auto;
+}
+
+#main1{
+    max-width:100%;
+    font-weight:100;
+    text-align:center;
+    font-size:15px;
+    letter-spacing:0.1em;
+    overflow:auto;
+}
+
+#header{
+    font-style:normal;
+    font-size:20px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top:200px;
+}
+
+.header2{
+    margin:2% 10%;
+}
+
+.header3{
+    margin:2% 10%;
+    font-size:15px;
+}
+
+#projects{
+    width:70%;
+    font-weight:100;
+    font-size:15px;
+    text-align:left;
+    margin-right:0;
+    margin-left:20%;
+    line-height:1.5em;
+    letter-spacing:0.1em; 
+}
+
+body .contact ul{
+    padding: 10px;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+
+}
+
+.contact li{
+    text-align:center;
+    width:100%;
+    margin-bottom:15px;
+}
+
+.contact{
+    padding-bottom:10%;
+}
+
+#main-footer{
+    font-family:Arial, Helvetica, sans-serif;
+    background:lightgrey;
+    color:#fff;
+    text-align:center;
+    padding:20px 0;
+    height:auto;
+    width:100%;
+    display:table;
+    margin-top:100px;
+    position:reletive;
+    clear:both;
+}
+
+
+@media screen and (max-width:900px){
+    nav.desk{
+        display:none;
+    }
+    header #branding{
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+    nav.mob,
+    .hamburger-btn{
+        display:block;
+    }
+    .hamburger-btn{
+        position: relative; 
+    }
+    .hamburger-btn .fa-bars,
+    .hamburger-btn .fa-times{
+        position:fixed;
+        right:25px;
+        top:15px;
+        font-size:35px;
+        color:#fd6a42;
+        cursor:pointer;
+    }
+    .mob ul{
+        display:none;
+    }
+    .mob li{
+        text-transform:uppercase;
+        text-align:center;
+        padding:20px;
+        cursor:pointer;
+    }
+    .mob ul.current{
+        display:block;
+        margin-top:0;
+        height:400px;
+        width:100%;
+        background: #f4f4f4;
+        box-sizing: border-box;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+    }
+
+    nav.mob li ul.dropdown {
+        position:fixed;
+        display:none;
+        width: 300px;
+        background-color:#f4f4f4;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+        padding-top:0;
+        height:400px;
+    }
+
+    nav.mob li ul.dropdown li a{
+        background:#f4f4f4;
+        border-bottom:none
+ 
+    }
+    nav.mob li ul.dropdown li{
+        list-style:none;
+        text-transform:uppercase;
+        margin-bottom:5px;
+        font-weight:lighter;
+    }
+    nav.mob  li:hover ul.dropdown {display:block;}
+
+    nav.mob li ul.dropdown li a:hover{
+        font-weight: bold;
+    }
+
+    #title{
+        width:70%;
+        margin-top:50px;
+        margin-left:15.5%;
+        text-align:center;
+        font-size: 20px;
+        line-height:1.5em;
+        letter-spacing:0.1em;
+        text-transform:none;
+    }
+
+    #header{
+        font-style:normal;
+        font-size:20px;
+        font-weight: lighter;
+        text-align: center;
+        margin-top:200px;
+    }
+
+    #main{
+        width:100%;
+        float:none;
+        text-align:left;
+    }
+
+    .contact{
+        height:410px;
+    }
+}
