@@ -18,7 +18,11 @@
 }
 
 #picture2{
+<<<<<<< HEAD:public/css/style.css
     background-image: url('../images/project page.jpg');
+=======
+    background-image: url('../images/hydrology.jpg');
+>>>>>>> 828efd6feb7151998b11f629e4fa8c4be6558591:app/stylesheets/_images.scss
     background-position: center center;
     background-repeat: no-repeat;
     margin:100px 0;
@@ -45,7 +49,7 @@
 }
 
 #picture5{
-    background-image: url('../images/local.png');
+    background-image: url('../images/local.jpg');
     background-position:center;
     background-repeat: no-repeat;
     margin:100px 0;
@@ -243,7 +247,7 @@
     }
     
     #picture5{
-        background-image: url('../images/local infrustructure mobile.jpg');
+        background-image: url('../images/local mobile.jpg');
         background-position:center;
         background-repeat: no-repeat;
         margin:100px 0;
@@ -261,7 +265,7 @@
     }
     
     #picture7{
-        background-image: url('../images/zambia electricity mobile.jpg');
+        background-image: url('../images/zambia electricity monile.jpg');
         background-position:center;
         background-repeat: no-repeat;
         margin:10px 0;
@@ -277,4 +281,12 @@
         min-height:250px;
         height:900px;
     }    
+<<<<<<< HEAD:public/css/style.css
+
+    .contact{
+        height:410px;
+    }
 }
+=======
+}
+>>>>>>> 828efd6feb7151998b11f629e4fa8c4be6558591:app/stylesheets/_images.scss
